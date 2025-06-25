@@ -31,7 +31,7 @@ docker exec -it <mysql_container_name> mysqldump -u root -p prestashop > db.sql
 ### 2. 🆙 Upload to cPanel
 
 - Use cPanel File Manager or SFTP to upload `prestashop.zip` and `db.sql` to `public_html/`
-- Extract `prestashop.zip` into `public_html/prestashop/`
+- Extract `prestashop.zip` into `public_html/`
 
 ### 3. 🛠️ Import Database
 
@@ -52,7 +52,7 @@ Set your new DB credentials:
 ### 5. 🖼️ Fix Image Permissions
 
 ```bash
-cd public_html/prestashop
+cd public_html/
 chmod -R 755 img
 chmod -R 775 img/p img/tmp
 chown -R your_cpanel_user:your_cpanel_user img
@@ -61,7 +61,10 @@ chown -R your_cpanel_user:your_cpanel_user img
 ### 6. 🌐 Regenerate `.htaccess`
 
 - Go to PrestaShop Admin > Shop Parameters > Traffic & SEO
+- Disable Friendly URLs 
 - Click “Save” at the bottom
+- Enable Friendly URLs
+- Clicks “Save” at the bottom 
 
 ### 7. 🔄 Fix Product Image Upload Error (500)
 
@@ -96,7 +99,7 @@ rm -rf public_html/prestashop/var/cache/*
 
 ## 🎉 Done
 
-You’ve successfully moved PrestaShop from Docker to a live cPanel server. Keep this guide for future reference!
+You’ve successfully moved PrestaShop from Docker to a live cPanel server!
 
 ---
 
