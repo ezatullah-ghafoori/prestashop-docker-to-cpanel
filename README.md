@@ -1,3 +1,7 @@
+> A migration guide for migrating PrestaShop from local Docker to cPanel.  
+> It was my personal guide — I just wrote it for myself.  
+> I hope it helps you as well. ✌️ Peace.
+
 
 # ✅ PrestaShop Docker to cPanel Migration Guide
 
@@ -98,4 +102,4 @@ You’ve successfully moved PrestaShop from Docker to a live cPanel server. Keep
 
 ## 🙌 Support
 
-Maintained by **ghafoori** 🧠 — DM anytime you need deep PrestaShop, PHP, or DevOps help.
+🧠 — DM anytime you need deep PrestaShop, PHP, or DevOps help.
