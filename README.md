@@ -25,7 +25,7 @@ This guide covers the exact steps taken to migrate a fully customized PrestaShop
 ```bash
 cd ~/Development/evitaflames/
 zip -r prestashop.zip prestashop/
-docker exec -it <mysql_container_name> mysqldump -u root -p prestashop > db.sql
+docker exec -it <mysql_container_name> mysqldump -u root -p<database-paswword> prestashop > db.sql
 ```
 
 ### 2. 🆙 Upload to cPanel
